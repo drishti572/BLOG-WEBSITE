@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travellers Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <h1 class="logo">Travellers Hub</h1>
+
+  <div class="nav-right">
+    <input type="text" placeholder="Search destinations..." class="search">
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-facebook"></i>
+    <!-- Add inside .nav-right -->
+<i class="fas fa-moon" id="theme-toggle" style="cursor:pointer; font-size:18px;"></i>
+
+  </div>
+</header>
+
+<section class="hero">
+
+<div class="hero-overlay">
+<h2>Uttarakhand Mountains</h2>
+<p>Explore the Himalayas • Devbhoomi Diaries 🏔️</p>
+</div>
+
+</section>
+
+<!-- DESTINATIONS -->
+<section class="destinations">
+
+<h2 class="section-title">Top Destinations</h2>
+
+<div class="destination-grid">
+
+<div class="destination-card">
+<img src="https://images.unsplash.com/photo-1698574996391-73f103113f60?w=600&auto=format&fit=crop&q=60"
+alt="Kedarnath Temple">
+<div class="destination-info">
+<h3>Kedarnath</h3>
+<p>Sacred Char Dham pilgrimage surrounded by snow-covered Himalayan peaks.</p>
+</div>
+</div>
+
+<div class="destination-card">
+<img src="https://images.unsplash.com/photo-1648328816428-1b14adcc5f2c?w=600&auto=format&fit=crop&q=60"
+alt="Auli Ski Resort Uttarakhand">
+
+<div class="destination-info">
+<h3>Auli</h3>
+<p>India’s skiing paradise with breathtaking views of Nanda Devi.</p>
+</div>
+</div>
+
+<div class="destination-card">
+<img src="https://images.pexels.com/photos/5745987/pexels-photo-5745987.jpeg">
+<div class="destination-info">
+<h3>Mussoorie</h3>
+<p>Queen of the Hills known for colonial charm and Mall Road.</p>
+</div>
+</div>
+
+<div class="destination-card">
+<img src="https://images.pexels.com/photos/247431/pexels-photo-247431.jpeg">
+<div class="destination-info">
+<h3>Nainital</h3>
+<p>Beautiful lake city surrounded by mountains.</p>
+</div>
+</div>
+
+</div>
+</section>
+<!-- MAP SECTION -->
+<section class="map-section">
+
+<h2 class="section-title">Explore Uttarakhand</h2>
+
+<div class="map-container">
+
+<iframe 
+src="https://www.google.com/maps?q=uttarakhand&output=embed"
+loading="lazy">
+</iframe>
+
+</div>
+
+</section>
+
+
+
+<!-- BLOG POSTS -->
+<section class="blog-container">
+
+<!-- POST 1 -->
+<article class="blog-card garhwal">
+  <video autoplay muted loop>
+    <source src="https://www.pexels.com/download/video/35020393/" type="video/mp4">
+  </video>
+
+  <div class="content">
+    <span class="date">June 12, 2025</span>
+    <h3>Kedarnath Temple Trek</h3>
+
+    <p>
+      A spiritual trek through the Garhwal Himalayas surrounded
+      by snow peaks and devotion.
+    </p>
+
+    <!-- COMMENTS -->
+    <div class="comments">
+      <h4>Comments</h4>
+      <div id="comments-1"></div>
+      <input type="text" id="name-1" placeholder="Your name">
+      <textarea id="comment-1" placeholder="Share your experience..."></textarea>
+      <button onclick="addComment(1)">Post</button>
+    </div>
+  </div>
+</article>
+
+
+<!-- POST 2 -->
+<article class="blog-card garhwal">
+ <video autoplay muted loop>
+  <source src="auli.mp4" type="video/mp4">
+</video>
+
+
+  <div class="content">
+    <span class="date">Jan 10, 2025</span>
+    <h3>Auli Snow Paradise</h3>
+    <p>
+      Famous for skiing, snowy slopes, and panoramic views of
+      Nanda Devi and surrounding Himalayan peaks.
+    </p>
+
+    <div class="comments">
+      <h4>Comments</h4>
+      <div id="comments-4"></div>
+      <input type="text" id="name-4" placeholder="Your name">
+      <textarea id="comment-4" placeholder="Share your experience..."></textarea>
+      <button onclick="addComment(4)">Post</button>
+    </div>
+  </div>
+</article>
+
+
+<!-- POST 3 -->
+<article class="blog-card garhwal">
+  <video autoplay muted loop>
+    <source src="https://media.istockphoto.com/id/1442378940/video/aerial-view-of-sunset-in-himalayas-india.mp4?s=mp4-480x480-is&k=20&c=fb_HuZAKRLy6Bsr3McgDGSpbVW74JjonDrmOax32RUc=" type="video/mp4">
+  </video>
+
+  <div class="content">
+    <span class="date">Feb 02, 2025</span>
+    <h3>Mussoorie – Queen of Hills</h3>
+    <p>
+      Colonial charm, misty mornings, Mall Road walks,
+      and breathtaking sunset points.
+    </p>
+
+    <div class="comments">
+      <h4>Comments</h4>
+      <div id="comments-5"></div>
+      <input type="text" id="name-5" placeholder="Your name">
+      <textarea id="comment-5" placeholder="Share your trip story..."></textarea>
+      <button onclick="addComment(5)">Post</button>
+    </div>
+  </div>
+</article>
+
+<!-- POST 4-->
+<article class="blog-card kumaon">
+  <video autoplay muted loop>
+    <source src="https://cdn.pixabay.com/video/2022/07/16/124394-731103614_tiny.mp4" type="video/mp4">
+  </video>
+
+  <div class="content">
+    <span class="date">June 24, 2025</span>
+    <h3>Nainital</h3>
+    <p>
+      Get panoramic views of the snow-clad Himalayan peaks from Snow View Point. 
+      Ideal for sunrise and photography lovers.
+    </p>
+
+    <div class="comments">
+      <h4>Comments</h4>
+      <div id="comments-25"></div>
+      <input type="text" id="name-25" placeholder="Your name">
+      <textarea id="comment-25" placeholder="Share your experience..."></textarea>
+      <button onclick="addComment(25)">Post</button>
+    </div>
+  </div>
+</article>
+
+
+<!-- POST 5 -->
+ <article class="blog-card char-dham">
+  <video autoplay muted loop>
+    <source src="https://media.istockphoto.com/id/2207120340/video/spiritual-ancient-temple-in-himalayan-peaks-with-vibrant-sky-backdrop.mp4?s=mp4-640x640-is&k=20&c=TQ4Pod372DOZ5WDDUL9f2rOB_nYprO9SBhRtxUc6JUU=" type="video/mp4">
+  </video>
+
+  <div class="content">
+    <span class="date">May 01, 2025</span>
+    <h3>Tungnath Temple Trek</h3>
+    <p>
+      The highest Shiva temple in the world, surrounded by snow-capped peaks. 
+      A spiritual and scenic trek for devotees and adventure lovers.
+    </p>
+
+    <div class="comments">
+      <h4>Comments</h4>
+      <div id="comments-13"></div>
+      <input type="text" id="name-13" placeholder="Your name">
+      <textarea id="comment-13" placeholder="Share your trekking experience..."></textarea>
+      <button onclick="addComment(13)">Post</button>
+    </div>
+  </div>
+</article>
+
+
+<!-- POST 6 -->
+<article class="blog-card garhwal">
+  <video autoplay muted loop>
+    <source src="https://media.istockphoto.com/id/1360204387/video/rishikesh-uttarakhand-india-oct-2020-ganga-aarti-ceremony-in-parmarth-niketan-ashram-at-sunset.mp4?s=mp4-640x640-is&k=20&c=b0FNLLyd5E4hx5ERWMyWklINh_b9Csuw-p1vQrj6yQQ=" type="video/mp4">
+  </video>
+
+  <div class="content">
+    <span class="date">July 05, 2025</span>
+    <h3>Rishikesh River Rafting</h3>
+    <p>
+      Experience thrilling white-water rafting on the Ganges, surrounded by lush Himalayan scenery. 
+      Perfect for adventure seekers.
+    </p>
+
+    <div class="comments">
+      <h4>Comments</h4>
+      <div id="comments-16"></div>
+      <input type="text" id="name-16" placeholder="Your name">
+      <textarea id="comment-16" placeholder="Share your rafting experience..."></textarea>
+      <button onclick="addComment(16)">Post</button>
+    </div>
+  </div>
+</article>
+
+</section>
+
+<!-- PAGINATION -->
+<div class="pagination">
+  <button onclick="prevPage()">Previous</button>
+  <button onclick="nextPage()">Next</button>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Travellers Hub | Designed by Drishti Juyal </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
